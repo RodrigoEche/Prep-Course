@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = 'Hola9del10del2022';
+const nuevaString = 'Hola de nuevo, colapso mi notebook perdi todo...volver a empezar. Nueva clonacion del repo en GitHub';
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 2.30666;
