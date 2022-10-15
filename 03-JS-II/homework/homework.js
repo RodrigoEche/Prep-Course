@@ -110,9 +110,11 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
   n = numero;
+
+  if ( n % 3 === 0 && n % 5 === 0 ) return "fizzbuzz"; // OJO TRAMPA EN EL ORDEN........
   if ( n % 3 === 0 ) return "fizz";
   if ( n % 5 === 0 ) return "buzz";
-  if ( n % 3 === 0 && n % 5 === 0 ) return "fizzbuzz";
+  
   return n;
 }
 
@@ -125,10 +127,10 @@ function operadoresLogicos(num1, num2, num3) {
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
   n1=num1; n2=num2; n3=num3;
 
-if ( n1 > n2 && n1 > n3 && n1 > 0 ) return "Número 1 es mayor y positivo";
+  if ( n1 === 0 || n2 === 0 || n3 === 0 ) return "Error";  // OJO TRAMPA EN EL ORDEN........
 if ( n1 < 0 || n2 < 0 || n3 < 0 ) return "Hay negativos";
-if ( n3 > n1 && n3 > n2 ) return n3 + 1;
-if ( n1 === 0 || n2 === 0 || n3 === 0 ) return "Error";
+if ( n1 > n2 && n1 > n3 && n1 > 0 ) return "Número 1 es mayor y positivo";
+if ( n3 > n1 && n3 > n2 ) return (n3 + 1);
 
 return false; // si llego acá es xq ninguna condición anterior se cumplió y no retornaron
 
@@ -147,9 +149,10 @@ function esPrimo(numero) {
   // los números primos menores que él hasta llegar a un cociente igual o menor que el divisor. 
   // Si ninguna de estas divisiones es exacta, el número es primo. 
   // Si alguna de las divisiones es exacta el número es compuesto y podemos interrumpir el proceso.
-  for ( var k = 2; k < numero; k++)  {
-    if ((numero % k) === 0 && numero===0)  return false;
-  }
+  for ( var k = 2; k < numero; k++)  {  if ((numero % k) === 0 )  return false;  }
+  if (numero===0 )  return false;
+  if (numero===1)  return false;
+
   return true;
   
 }
