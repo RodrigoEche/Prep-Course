@@ -71,14 +71,13 @@ function esDiezOCinco(numero) {
   n=numero;
 
   //if ( n === 5 | n === 10) {return true;} else {return false;};     //anda
+  //return n === 5 | n === 10      //MEJOR SOLUCION: SIMPLEZA
 
   switch (n) {
   case (10): return true;    //anda
   case (5): return true;    //anda
 
-  // case (10 | 5): return true; // no anda porque? Alternativa para usar switch case
-  //  case (100 | 385 ): return false; 
-   default: return false ;  
+    default: return false ;  
   }
 
 }
@@ -101,7 +100,9 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  if (Number.isInteger(numero)) return true; else return false;
+  // if (Number.isInteger(numero)) return true; else return false;   //funciona
+  // return Number.isInteger(numero)  // funciona
+  return numero % 1 === 0 // funciona y es GENIAL
 }
 
 function fizzBuzz(numero) {
