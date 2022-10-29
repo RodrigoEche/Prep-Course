@@ -156,7 +156,6 @@ function agregarMetodoCalculoDescuento (producto) {
     nuevoPrecio = precio - precio * descuento;    
     return nuevoPrecio;
   }; 
-
   
   return producto;
 

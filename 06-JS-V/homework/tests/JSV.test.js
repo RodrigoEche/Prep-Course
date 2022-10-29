@@ -22,12 +22,12 @@ describe('crearUsuario()', function() {
 
 describe('agregarMetodoPrototype(Constructor)', function() {
 	it('should add the method saludar to the constructor', function() {
-		function Test() {
-			this.test = true;
+		function Test() {    	//crea la clase o función constructora Test
+			this.test = true;  	//con una propiedad .test
 		}
-		agregarMetodoPrototype(Test);
-		const test = new Test();
-		expect(test.saludar()).toBe('Hello World!');
+		agregarMetodoPrototype(Test); 				//le pasa la función constructora a la función que piden programar
+		const test = new Test();					//crea el objeto test de tipo Test
+		expect(test.saludar()).toBe('Hello World!');//espera que al invocar el método agregado saludar() devuelva lo esperado
 	});
 });
 
