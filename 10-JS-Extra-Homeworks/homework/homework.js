@@ -10,7 +10,15 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
-}
+  matriz = [];
+  for (let clave in objeto) {
+    let par = [ clave, objeto[clave] ];
+    matriz.push(par);    
+  };
+
+  return matriz;
+} 
+// paso 1 de 8
 
 
 function numberOfCharacters(string) {

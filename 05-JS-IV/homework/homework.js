@@ -116,8 +116,8 @@ function pasarUsuarioAPremium (usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
-  for ( i = 0; i < usuarios.length; i++ ) usuarios[i].esPremium = true;
-
+  for ( i = 0; i < usuarios.length; i++ ) usuarios[i].esPremium = true; //ANDUVO
+  
   return usuarios;
 }
 
