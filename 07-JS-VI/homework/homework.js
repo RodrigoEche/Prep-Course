@@ -6,12 +6,14 @@ function mayuscula(nombre) {
   //Tu código:
 
   /* solución mía anduvo, pruebo la de los profesores */
-  let primerCarEnMayuscula  = String(nombre[0]).toUpperCase();
+ /* let primerCarEnMayuscula  = String(nombre[0]).toUpperCase();
   let siguientesCar         = String(nombre).substring(1);
 
-  return primerCarEnMayuscula + siguientesCar; 
+  return primerCarEnMayuscula + siguientesCar; */
 
   //return nombre[0].toUpperCase() + nombre.slice(1); //solución Henry
+  //solución Henry en video 2 noviembre vimeoo
+  
 
 } //pasó 1 de 7
 
