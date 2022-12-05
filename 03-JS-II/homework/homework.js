@@ -168,13 +168,18 @@ function esVerdadero(valor){
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
+  //Escribe tu código aquí  
+  var array = new Array(11).fill(0); // FUNCIONA TAMBIEN
+  var arrayMultiplos =  array.map(   ( e, index ) => index * 6   );  
+  return arrayMultiplos;
+  /* FUNCIONA
   let  array=[];
   for (i = 0;  i < 1000; i++ ) {
     if ( ( i*6 ) <= 60 ) { array.push( i*6 ); console.log(i*6);} else break;
   }
-  return array;
+  return array;    FUNCIONA */
 }
+
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.

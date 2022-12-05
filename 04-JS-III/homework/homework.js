@@ -1,9 +1,9 @@
 // No cambies los nombres de las funciones.
 
-function devolverPrimerElemento(array) {
+function devolverPrimerElemento(arreglo) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
-  return array[0];
+  return arreglo[0];
 }
 
 
@@ -193,13 +193,17 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  n = arreglo.length;
-  valor = arreglo[0] ; 
+  solucion = 1;
+  switch (solucion){
+    case 1:
+        n = arreglo.length;
+        valor = arreglo[0] ; 
+        for (i = 1; i < n; i++ ) { if ( valor !== arreglo[i] ) return false; else return true;  }
+    case 2:
 
-  for (i = 1; i < n; i++ ) {       
-      if ( valor !== arreglo[i] ) return false; else return true;
-  }
- 
+    
+} // fin del switch case
+
 } 
 
 
