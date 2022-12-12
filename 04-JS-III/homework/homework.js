@@ -94,10 +94,12 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  
   var suma =0;
   for (i = 0; i < numeros.length; i++) suma = suma + numeros[i];
   return suma;
 }
+
 
 
 function promedioResultadosTest(resultadosTest) {
