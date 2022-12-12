@@ -128,8 +128,11 @@ function operadoresLogicos(num1, num2, num3) {
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
   n1=num1; n2=num2; n3=num3;
 
-  if ( n1 === 0 || n2 === 0 || n3 === 0 ) return "Error";  // OJO TRAMPA EN EL ORDEN........
+
+
 if ( n1 < 0 || n2 < 0 || n3 < 0 ) return "Hay negativos";
+if ( n1 === 0 || n2 === 0 || n3 === 0 ) return "Error";  // OJO TRAMPA EN EL ORDEN........
+
 if ( n1 > n2 && n1 > n3 && n1 > 0 ) return "Número 1 es mayor y positivo";
 if ( n3 > n1 && n3 > n2 ) return (n3 + 1);
 

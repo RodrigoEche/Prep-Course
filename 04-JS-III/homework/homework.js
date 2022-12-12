@@ -26,12 +26,13 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+
   for ( i = 0; i < array.length; i++) {array[i]=array[i]+1;}
   return array;
 }
 
-
 function agregarItemAlFinalDelArray(array, elemento) {
+  
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:  
@@ -56,7 +57,8 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  var arrayNuevo= [];
+  
+  /* var arrayNuevo= [];
   arrayNuevo[0] = palabras[0];
 
   for ( i = 1; i < palabras.length; i++) {
@@ -66,7 +68,8 @@ function dePalabrasAFrase(palabras) {
   var cadena = '';
   for ( i = 0; i < arrayNuevo.length; i++)  cadena = cadena + arrayNuevo[i];   
 
-  return cadena;
+  return cadena; */
+  return palabras.join(" ");
 }
 
 
@@ -200,8 +203,9 @@ function todosIguales(arreglo) {
         valor = arreglo[0] ; 
         for (i = 1; i < n; i++ ) { if ( valor !== arreglo[i] ) return false; else return true;  }
     case 2:
-
-    
+        igual = true;
+        igual = arreglo.reduce(  (previo,actual,indice) =>  {if (actual != previo)  return false;  } )
+        return igual;
 } // fin del switch case
 
 } 
